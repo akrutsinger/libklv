@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="libklv" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/libklv" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="-f Day_Flight.mpg" />
+				<Compiler>
+					<Add option="-std=c99" />
+					<Add option="-g" />
+					<Add directory="../libklv" />
+					<Add directory="dvbpsi" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/libklv" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="../libklv" />
+					<Add directory="dvbpsi" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c99" />
+			<Add directory="../libklv" />
+			<Add directory="dvbpsi" />
+		</Compiler>
+		<Unit filename="dvbpsi/descriptor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dvbpsi/descriptors/dr_05.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dvbpsi/descriptors/dr_0b.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dvbpsi/descriptors/dr_0e.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dvbpsi/descriptors/dr_52.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dvbpsi/descriptors/dr_59.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dvbpsi/dvbpsi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dvbpsi/psi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dvbpsi/tables/pat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dvbpsi/tables/pmt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libklv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libklv.h" />
+		<Unit filename="list.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<DoxyBlocks>
+				<comment_style block="4" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
